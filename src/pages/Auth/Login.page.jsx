@@ -5,9 +5,6 @@ import AuthWrapper from "./AuthWrapper";
 import AuthLogin from "./auth-Form/AuthLogin";
 
 function Login() {
-  {
-    console.log("login");
-  }
   return (
     <AuthWrapper>
       <Grid container spacing={3}>
