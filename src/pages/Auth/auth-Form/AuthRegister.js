@@ -71,7 +71,7 @@ function AuthRegister() {
         }) => (
           <form noValidate onSubmit={handleSubmit}>
             <Grid container spacing={3}>
-              <Grid item xs={12} md={6}>
+              <Grid item xs={12}>
                 <Stack spacing={1}>
                   <InputLabel htmlFor="firstName-register">
                     First Name *
@@ -95,7 +95,7 @@ function AuthRegister() {
                 </Stack>
               </Grid>
 
-              <Grid item xs={12} md={6}>
+              <Grid item xs={12}>
                 <Stack spacing={1}>
                   <InputLabel htmlFor="lastName-register">
                     Last Name *
@@ -235,7 +235,6 @@ function AuthRegister() {
                   size="large"
                   type="submit"
                   variant="contained"
-                  color="blue"
                 >
                   Create Account
                 </Button>

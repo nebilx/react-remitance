@@ -46,9 +46,11 @@ export const {
   setMessageAction,
 } = userSlice.actions;
 
-export const userData = (state) => state.user.data;
-export const isLoading = (state) => state.user.isLoading;
-export const error = (state) => state.user.error;
-export const message = (state) => state.user.message;
+const userDataState = (state) => state.user.data;
+const isLoadingState = (state) => state.user.isLoading;
+const errorState = (state) => state.user.error;
+const messageState = (state) => state.user.message;
 
 export default userSlice.reducer;
+
+export { userDataState, isLoadingState, errorState, messageState };

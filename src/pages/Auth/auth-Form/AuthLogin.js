@@ -127,7 +127,7 @@ function AuthLogin() {
                   alignItems="center"
                   spacing={2}
                 >
-                  <Link variant="h6" component={RouterLink} to="" color="black">
+                  <Link variant="h6" component={RouterLink} to="">
                     Forgot Password?
                   </Link>
                 </Stack>
@@ -145,7 +145,6 @@ function AuthLogin() {
                   size="large"
                   type="submit"
                   variant="contained"
-                  color="blue"
                 >
                   Login
                 </Button>

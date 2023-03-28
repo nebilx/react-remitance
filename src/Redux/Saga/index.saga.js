@@ -1,3 +1,6 @@
+import { all, fork } from "redux-saga/effects";
 import userSaga from "./User/user.saga";
 
-export const rootSaga = [userSaga];
+export function* allSaga() {
+  yield all([fork(userSaga)]);
+}

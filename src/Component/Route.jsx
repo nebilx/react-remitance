@@ -1,4 +1,8 @@
-import { isLoading, error, message } from "../Redux/Store/Slice/user.slice";
+import {
+  isLoadingState,
+  errorState,
+  messageState,
+} from "../Redux/Store/Slice/user.slice";
 import dispatch from "../Redux/Store/configureStore";
 import { useDispatch, useSelector } from "react-redux";
 import { Login, Register } from "../pages/Auth/index.auth";
@@ -7,14 +11,14 @@ import toast, { Toaster } from "react-hot-toast";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const Routing = () => {
-  const isLoading = useSelector(isLoading);
+  const isLoading = useSelector(isLoadingState);
   const dispatch = useDispatch();
-  const error = useSelector(error);
-  const message = useSelector(message);
+  const error = useSelector(errorState);
+  const message = useSelector(messageState);
 
   const routes = [
     {
-      path: "/Signin",
+      path: "/",
       component: <Login />,
     },
     { path: "/signUp", component: <Register /> },
